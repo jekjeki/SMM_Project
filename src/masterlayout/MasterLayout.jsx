@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 import { useNavigate, useLocation } from 'react-router-dom';
+import Navbar from '../component/Navbar';
 
 function MasterLayout({ children }) {
     const [collapse, setCollapse] = useState(false);
@@ -67,8 +68,12 @@ function MasterLayout({ children }) {
             </Sidebar>
 
             {/* Main Content */}
-            <main className="flex-1 p-4 overflow-auto">
-                {children}
+            
+            <main className="flex-1 overflow-auto">
+                <Navbar />
+                <div className='p-4'>
+                    {children}
+                </div>
             </main>
         </section>
     );
