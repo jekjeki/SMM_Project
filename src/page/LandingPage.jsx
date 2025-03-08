@@ -35,7 +35,7 @@ function LandingPage() {
                 color: 'white', 
                 fontWeight: 'bold'
               }}>Coba Sekarang</button>
-              <button className='ml-5'>Pelajari Lebih Lanjut</button>
+              <button className='ml-5 bg-white'>Pelajari Lebih Lanjut</button>
             </div>
           </div>
         </div>
